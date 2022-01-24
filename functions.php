@@ -18,7 +18,7 @@ function load_Js() {
     wp_enqueue_script('jquery'); // Para ma-include yung jquery sa project
     wp_register_script('bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, true);
     // true = eto yung mag sshow sya sa bottom pero pag false mag sshow sya sa heeader
-    // false = eto yung versions
+    // false = eto yung versionssss
     // jquery = dependencies
     wp_enqueue_script('bootstrapjs');
 
