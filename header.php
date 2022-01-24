@@ -11,4 +11,18 @@
 
 <body>
 
-    <header></header>
+    <header>
+        <div class="container">
+            <?php
+
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'top-menu',
+                    // 'menu' => 'Top bar',
+                    'menu_class' => 'top-bar' // Binabago nya yung class name ng ul default name - menu
+                )
+            );
+
+            ?>
+        </div>
+    </header>

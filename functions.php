@@ -26,6 +26,21 @@ function load_Js() {
 
 add_action('wp_enqueue_scripts', 'load_Js');
 
+// Theme Options
+add_theme_support('menus');
+
+
+// Menus
+register_nav_menus(
+
+    array(
+        'top-menu' => 'Top menu location',
+        'mobile-menu' => 'Mobile menu location',
+        'footer-menu' => 'Footer menu location'
+    )
+
+    );
+
 
 
 
