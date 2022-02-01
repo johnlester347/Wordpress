@@ -26,13 +26,13 @@ function load_Js() {
 
 add_action('wp_enqueue_scripts', 'load_Js');
 
-// Theme Options
+// Theme Options (To Activate the menu from Appearance>Menus)
 add_theme_support('menus');
 
-// Theme Options(This is to activate upload image)
+// Theme Options(This is to activate upload image dun sa post, pwede kana mag upload featured image)
 add_theme_support('post-thumbnails');
 
-// Theme Options
+// Theme Options (To Activate the widget from Appearance>Widgets)
 add_theme_support('widgets');
 
 
@@ -48,7 +48,7 @@ register_nav_menus(
     );
 
 
-// Custom Image Sizes
+// Custom Image Sizes(Eto yung mga sizes na pwede mo gamitin sa POST image, need mo lang ilagay sa argument/parameter sample the_post_thumbnail_url('blog-large') and yung false pala is para hindi ma crop yung image kasi pag naka true yan at nag upload ka ng 1000x1000 is ma ccrop sya into 800x400 gets? and download ka din pala ng Force Regenerate Thumbnail for loading image everytime na mag upload ka located at Tools>Force Regenerate
 add_image_size('blog-large', 800, 400, false);
 add_image_size('blog-small', 300, 200, false);
 
